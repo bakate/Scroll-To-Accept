@@ -1,0 +1,38 @@
+body {
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
+  line-height: 2;
+  background: #ffc600;
+}
+
+.wrapper {
+  width: 400px;
+  height: 80vh;
+  padding: 20px;
+  border: 1px solid black;
+  background: white;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+button {
+  background: #ff0060;
+  color: white;
+  font-size: 1rem;
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+
+button[disabled] {
+  opacity: 0.1;
+  transform: translateX(-200%) scale(0.5);
+}
+
+.terms-and-conditions {
+  overflow: scroll;
+}
